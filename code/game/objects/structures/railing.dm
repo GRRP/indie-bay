@@ -14,11 +14,8 @@
 	var/maxhealth = 40
 	var/check = 0
 
-/obj/structure/railing/New(loc, constructed = 0)
-	..()
-	// TODO - "constructed" is not passed to us. We need to find a way to do this safely.
-	if (constructed) // player-constructed railings
-		anchored = 0
+/obj/structure/railing/constructed // a cheap trick to spawn unanchored railings for construction
+	anchored = 0
 
 /obj/structure/railing/Initialize()
 	..()
@@ -236,6 +233,8 @@
 				occupied = 1
 			else
 				for(var/obj/O in T.contents)
+					if(O == usr) // trying to climb onto yourself? Sure, go ahead bud.
+						continue
 					if(istype(O,/obj/structure))
 						var/obj/structure/S = O
 						if(S.atom_flags & ATOM_FLAG_CLIMBABLE)
@@ -275,7 +274,8 @@ obj/structure/railing/do_climb(var/mob/living/user)
 	// Always fun to climb over a railing, fall to the floor below, and then have the railing fall on you.
 	if(!anchored)
 		user.visible_message("<span class='warning'>\The [user] tries to climb over \the [src], but it collapses!</span>")
-		src.forceMove(get_step(src, src.dir))
+		user.Weaken(30)
+		src.forceMove(get_turf(user))
 		take_damage(maxhealth/2)
 	else
 		user.visible_message("<span class='warning'>\The [user] climbs over \the [src]!</span>")
