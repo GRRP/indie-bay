@@ -46,6 +46,22 @@
 		SPECIES_TAJARA = 'icons/mob/species/tajaran/mask.dmi'
 		)
 
+/obj/item/clothing/mask/surgical/makeshift_mask
+	name = "makeshift sterile mask"
+	desc = "A cloth mask to weakly help prevent the spread of diseases."
+	icon_state = "makemask"
+	item_state = "makemask"
+	w_class = ITEM_SIZE_SMALL
+	body_parts_covered = FACE
+	item_flags = ITEM_FLAG_FLEXIBLEMATERIAL
+	gas_transfer_coefficient = 0.90
+	permeability_coefficient = 0.01
+	armor = list(melee = 0, bullet = 0, laser = 0,energy = 0, bomb = 0, bio = 30, rad = 0)
+	down_gas_transfer_coefficient = 1
+	down_body_parts_covered = null
+	down_icon_state = "steriledown"
+	pull_mask = 1
+
 /obj/item/clothing/mask/fakemoustache
 	name = "fake moustache"
 	desc = "Warning: moustache is fake."
