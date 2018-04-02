@@ -66,14 +66,6 @@ Keeping them simple for now, just spawning with basic EC uniforms, and pretty mu
 	uniform = /obj/item/clothing/under/solgov/utility/fleet/command
 	shoes = /obj/item/clothing/shoes/dutyboots
 
-/decl/hierarchy/outfit/job/torch/passenger/research/rd
-	name = OUTFIT_JOB_NAME("Research Director - Torch")
-	l_ear = /obj/item/device/radio/headset/heads/torchntcommand
-	uniform = /obj/item/clothing/under/rank/research_director
-	suit = /obj/item/clothing/suit/storage/toggle/labcoat/science
-	shoes = /obj/item/clothing/shoes/brown
-	pda_type = /obj/item/device/pda/heads/rd
-
 /decl/hierarchy/outfit/job/torch/crew/command/cmo
 	name = OUTFIT_JOB_NAME("Chief Medical Officer - Torch")
 	l_ear  =/obj/item/device/radio/headset/heads/cmo
@@ -537,13 +529,6 @@ Keeping them simple for now, just spawning with basic EC uniforms, and pretty mu
 	..()
 	BACKPACK_OVERRIDE_RESEARCH
 
-/decl/hierarchy/outfit/job/torch/passenger/research/nt_pilot //pending better uniform
-	name = OUTFIT_JOB_NAME("NanoTrasen Pilot")
-	uniform = /obj/item/clothing/under/rank/ntpilot
-	suit = /obj/item/clothing/suit/storage/toggle/brown_jacket/nanotrasen
-	shoes = /obj/item/clothing/shoes/workboots
-	id_type = /obj/item/weapon/card/id/torch/passenger/research/nt_pilot
-
 /decl/hierarchy/outfit/job/torch/passenger/research/scientist
 	name = OUTFIT_JOB_NAME("Scientist - Torch")
 	uniform = /obj/item/clothing/under/rank/scientist
@@ -636,13 +621,6 @@ Keeping them simple for now, just spawning with basic EC uniforms, and pretty mu
 	..()
 	var/obj/item/weapon/storage/secure/briefcase/money/case = new(H.loc)
 	H.put_in_hands(case)
-
-/decl/hierarchy/outfit/job/torch/offduty
-	name = OUTFIT_JOB_NAME("Off-Duty - Torch")
-	uniform = /obj/item/clothing/under/solgov/service/expeditionary
-	l_ear = /obj/item/device/radio/headset
-	shoes = /obj/item/clothing/shoes/dress
-	pda_type = /obj/item/device/pda
 
 /decl/hierarchy/outfit/job/torch/offduty/officer
 	name = OUTFIT_JOB_NAME("Off-Duty - Officer")

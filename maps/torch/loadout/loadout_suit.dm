@@ -23,10 +23,10 @@
 	allowed_roles = list( /datum/job/roboticist, /datum/job/merchant)
 
 /datum/gear/suit/science_poncho
-	allowed_roles = list(/datum/job/scientist,  /datum/job/merchant)
+	allowed_roles = list(/datum/job/scientist, /datum/job/merchant)
 
 /datum/gear/suit/cargo_poncho
-	allowed_roles = list(  /datum/job/merchant)
+	allowed_roles = list( /datum/job/merchant)
 
 /datum/gear/suit/suit_jacket
 	allowed_roles = FORMAL_ROLES

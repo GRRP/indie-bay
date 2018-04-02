@@ -126,14 +126,8 @@
 	icon_state = "id"
 	job_access_type = /datum/job/assistant
 
-/obj/item/weapon/card/id/torch/passenger/research
-	desc = "A card issued to NanoTrasen personnel aboard the SEV Torch."
-	icon_state = "corporate"
-
 /obj/item/weapon/card/id/torch/passenger/research/senior_scientist
 	job_access_type = /datum/job/senior_scientist
-
-/obj/item/weapon/card/id/torch/passenger/research/nt_pilot
 
 /obj/item/weapon/card/id/torch/passenger/research/scientist
 	job_access_type = /datum/job/scientist
@@ -169,22 +163,16 @@
 	update_name()
 
 /obj/item/weapon/card/id/science/med_researcher
-	name = "identification card"
 	desc = "A card issued to science staff. This one is for a Medical Researcher."
-	icon_state = "sci"
 	access = list(access_medical, access_morgue, access_virology, access_maint_tunnels, access_emergency_storage,
 				access_crematorium, access_chemistry, access_surgery, access_research, access_xenobiology, access_xenoarch,
 				access_expedition_shuttle, access_guppy, access_hangar, access_petrov)
 
 /obj/item/weapon/card/id/science/eng_researcher
-	name = "identification card"
 	desc = "A card issued to science staff. This one is for an Engineering Researcher."
-	icon_state = "sci"
 	access = list(access_tech_storage, access_construction, access_seneng, access_maint_tunnels, access_eva, access_research,
 				access_expedition_shuttle, access_guppy, access_hangar, access_petrov)
 
 /obj/item/weapon/card/id/science/sup_researcher
-	name = "identification card"
 	desc = "A card issued to science staff. This one is for a materials researcher."
-	icon_state = "sci"
 	access = list(access_research, access_expedition_shuttle, access_guppy, access_hangar, access_petrov, access_maint_tunnels, access_xenoarch, access_cargo)
