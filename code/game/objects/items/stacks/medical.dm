@@ -111,7 +111,7 @@
 	singular_name = "makeshift bandage"
 	desc = "Some cloth to wrap around wounds"
 	icon_state = "makebandage"
-	origin_tech = list(TECH_BIO = 1)
+	origin_tech = list(TECH_MATERIAL = 1)
 	animal_heal = 3
 
 /obj/item/stack/medical/bruise_pack/makeshift_banage/attack(mob/living/carbon/M as mob, mob/user as mob)
