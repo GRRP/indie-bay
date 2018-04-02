@@ -4,7 +4,7 @@
 		if(do_after(user, 50, src))
 			to_chat(user, "<span class='notice'>You cut \the [src] into pieces!</span>")
 			for(var/obj/item/clothing/under/H)
-                if(var/i in 2 to rand(3,5))
+				if(var/i in 2 to rand(3,5))
 				new /obj/item/stack/material/cloth(get_turf(src))
 			qdel(src)
 		return
