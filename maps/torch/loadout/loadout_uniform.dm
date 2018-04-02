@@ -67,8 +67,7 @@
 	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/uniform/corporate
-	allowed_roles = list(/datum/job/scientist, /datum/job/mining,  , /datum/job/scientist_assistant,
-						/datum/job/scientist_assistant,  /datum/job/roboticist,
+	allowed_roles = list(/datum/job/scientist, /datum/job/mining, /datum/job/roboticist,
 						/datum/job/psychiatrist,   /datum/job/bartender, /datum/job/detective, /datum/job/merchant, /datum/job/assistant)
 
 /datum/gear/uniform/sterile

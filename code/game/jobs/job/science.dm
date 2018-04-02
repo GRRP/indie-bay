@@ -1,11 +1,12 @@
+/*
 /datum/job/rd
 	title = "Research Director"
 	head_position = 1
 	department = "Science"
 	department_flag = COM|SCI
 
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	supervisors = "the captain"
 	selection_color = "#ad6bad"
 	req_admin_notify = 1
@@ -21,7 +22,7 @@
 	minimal_player_age = 14
 	ideal_character_age = 50
 	outfit_type = /decl/hierarchy/outfit/job/science/rd
-
+*/
 /datum/job/scientist
 	title = "Scientist"
 	department = "Science"

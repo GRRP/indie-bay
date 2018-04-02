@@ -1,8 +1,8 @@
 //Due to how large this one is it gets its own file
 /datum/job/chaplain
 	title = "Chaplain"
-	department = "Civilian"
-	department_flag = CIV
+	department = "Medical"
+	department_flag = MED
 
 	total_positions = 1
 	spawn_positions = 1
@@ -10,7 +10,6 @@
 	selection_color = "#515151"
 	access = list(access_morgue, access_chapel_office, access_crematorium, access_maint_tunnels)
 	minimal_access = list(access_morgue, access_chapel_office, access_crematorium)
-	alt_titles = list("Counselor")
 	outfit_type = /decl/hierarchy/outfit/job/chaplain
 
 	equip(var/mob/living/carbon/human/H, var/alt_title, var/ask_questions = TRUE)

@@ -95,11 +95,11 @@
 	allowed_roles = ENGINEERING_ROLES
 
 /datum/gear/accessory/armband_hydro
-	allowed_roles = list(/datum/job/rd, /datum/job/scientist, /datum/job/scientist_assistant, /datum/job/assistant)
+	allowed_roles = list(/datum/job/scientist,  /datum/job/assistant)
 
 /datum/gear/accessory/armband_nt
-	allowed_roles = list(/datum/job/rd, , /datum/job/senior_scientist, /datum/job/nt_pilot, /datum/job/scientist,
-						/datum/job/mining,  , /datum/job/scientist_assistant,
+	allowed_roles = list(/datum/job/senior_scientist, /datum/job/scientist,
+						/datum/job/mining,
 						/datum/job/roboticist,
 						/datum/job/psychiatrist,  /datum/job/chemist,
 						/datum/job/janitor, /datum/job/chef, /datum/job/bartender)
@@ -118,7 +118,7 @@
 
 /datum/gear/storage/brown_vest
 	allowed_roles = list(/datum/job/chief_engineer, /datum/job/senior_engineer, /datum/job/engineer,  /datum/job/roboticist, /datum/job/qm, /datum/job/cargo_tech,
-						  /datum/job/mining, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/merchant, /datum/job/nt_pilot)
+						  /datum/job/mining, /datum/job/janitor,  /datum/job/merchant)
 
 /datum/gear/storage/black_vest
 	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer,  , /datum/job/merchant)
@@ -128,7 +128,7 @@
 
 /datum/gear/storage/brown_drop_pouches
 	allowed_roles = list(/datum/job/chief_engineer, /datum/job/senior_engineer, /datum/job/engineer,  /datum/job/roboticist, /datum/job/qm, /datum/job/cargo_tech,
-						  /datum/job/mining, /datum/job/janitor, /datum/job/scientist_assistant, /datum/job/merchant)
+						  /datum/job/mining, /datum/job/janitor,  /datum/job/merchant)
 
 /datum/gear/storage/black_drop_pouches
 	allowed_roles = list(/datum/job/hos, /datum/job/warden, /datum/job/detective, /datum/job/officer,  , /datum/job/merchant)
@@ -191,6 +191,6 @@
 	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/accessory/ftupin
-	allowed_roles = list(/datum/job/scientist, /datum/job/mining,  , /datum/job/scientist_assistant,
-						/datum/job/scientist_assistant,  /datum/job/roboticist,
+	allowed_roles = list(/datum/job/scientist, /datum/job/mining,  ,
+						  /datum/job/roboticist,
 						/datum/job/psychiatrist,   /datum/job/bartender, /datum/job/merchant, /datum/job/assistant)

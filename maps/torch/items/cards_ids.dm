@@ -126,24 +126,14 @@
 	icon_state = "id"
 	job_access_type = /datum/job/assistant
 
-/obj/item/weapon/card/id/torch/offduty
-	desc = "A card issued to off-duty personnel aboard the SEV Torch."
-	icon_state = "id"
-	job_access_type = /datum/job/offduty
-
 /obj/item/weapon/card/id/torch/passenger/research
 	desc = "A card issued to NanoTrasen personnel aboard the SEV Torch."
 	icon_state = "corporate"
-	job_access_type = /datum/job/scientist_assistant
-
-/obj/item/weapon/card/id/torch/silver/research
-	job_access_type = /datum/job/rd
 
 /obj/item/weapon/card/id/torch/passenger/research/senior_scientist
 	job_access_type = /datum/job/senior_scientist
 
 /obj/item/weapon/card/id/torch/passenger/research/nt_pilot
-	job_access_type = /datum/job/nt_pilot
 
 /obj/item/weapon/card/id/torch/passenger/research/scientist
 	job_access_type = /datum/job/scientist
