@@ -148,3 +148,9 @@
 		new/datum/stack_recipe("white folder", /obj/item/weapon/folder/white), \
 		new/datum/stack_recipe("yellow folder", /obj/item/weapon/folder/yellow), \
 		))
+
+/material/cloth/generate_recipes()
+	..()
+	recipes += new/datum/stack_recipe("rag", /obj/item/weapon/reagent_containers/glass/rag)
+	recipes += new/datum/stack_recipe("makeshift mask", /obj/item/clothing/mask/surgical/makeshift_mask)
+	recipes += new/datum/stack_recipe("makeshift bandage", /obj/item/stack/medical/bruise_pack/makeshift_bandage)
