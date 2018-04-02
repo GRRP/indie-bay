@@ -9,14 +9,6 @@
 	..()
 	BACKPACK_OVERRIDE_RESEARCH
 
-/decl/hierarchy/outfit/job/science/rd
-	name = OUTFIT_JOB_NAME("Research Director")
-	l_ear = /obj/item/device/radio/headset/heads/rd
-	uniform = /obj/item/clothing/under/rank/research_director
-	shoes = /obj/item/clothing/shoes/brown
-	l_hand = /obj/item/weapon/clipboard
-	pda_type = /obj/item/device/pda/heads/rd
-
 /decl/hierarchy/outfit/job/science/scientist
 	name = OUTFIT_JOB_NAME("Scientist")
 	uniform = /obj/item/clothing/under/rank/scientist
