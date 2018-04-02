@@ -139,15 +139,15 @@
 					break
 
 				if (W.current_stage <= W.max_bleeding_stage)
-					user.visible_message("<span class='notice'>\The [user] bandages \a [W.desc] on [M]'s [affecting.name].</span>", \
+					user.visible_message("<span class='notice'>\The [user] bandages, to their best of capability, \a [W.desc] on [M]'s [affecting.name]. It doesn't look like much, but it'll do.</span>", \
 					                              "<span class='notice'>You bandage \a [W.desc] on [M]'s [affecting.name].</span>" )
 					//H.add_side_effect("Itch")
 				else if (W.damage_type == BRUISE)
-					user.visible_message("<span class='notice'>\The [user] places a bruise patch over \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You place a bruise patch over \a [W.desc] on [M]'s [affecting.name].</span>" )
+					user.visible_message("<span class='notice'>\The [user] bandages, to their best of capability, \a [W.desc] on [M]'s [affecting.name].</span>", \
+					                              "<span class='notice'>You place a rugged bandage over \a [W.desc] on [M]'s [affecting.name].</span>" )
 				else
-					user.visible_message("<span class='notice'>\The [user] places a bandaid over \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You place a bandaid over \a [W.desc] on [M]'s [affecting.name].</span>" )
+					user.visible_message("<span class='notice'>\The [user] bandages, to their best of capability, \a [W.desc] on [M]'s [affecting.name].</span>", \
+					                              "<span class='notice'>You place a ragged bandage over \a [W.desc] on [M]'s [affecting.name].</span>" )
 				W.bandage()
 				used++
 			affecting.update_damages()
