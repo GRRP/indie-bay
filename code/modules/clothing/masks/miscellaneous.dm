@@ -47,8 +47,9 @@
 		)
 
 /obj/item/clothing/mask/surgical/makeshift_mask
-	name = "makeshift sterile mask"
+	name = "makeshift mask"
 	desc = "A cloth mask to weakly help prevent the spread of diseases."
+	icon = 'makeshift.dmi'
 	icon_state = "makemask"
 	item_state = "makemask"
 	w_class = ITEM_SIZE_SMALL
