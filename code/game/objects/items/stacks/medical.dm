@@ -75,7 +75,7 @@
 			return 1
 		else
 			user.visible_message("<span class='notice'>\The [user] starts treating [M]'s [affecting.name].</span>", \
-					             "<span class='notice'>You start treating [M]'s [affecting.name].</span>" )
+									"<span class='notice'>You start treating [M]'s [affecting.name].</span>" )
 			var/used = 0
 			for (var/datum/wound/W in affecting.wounds)
 				if(W.bandaged)
@@ -88,14 +88,14 @@
 
 				if (W.current_stage <= W.max_bleeding_stage)
 					user.visible_message("<span class='notice'>\The [user] bandages \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You bandage \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You bandage \a [W.desc] on [M]'s [affecting.name].</span>" )
 					//H.add_side_effect("Itch")
 				else if (W.damage_type == BRUISE)
 					user.visible_message("<span class='notice'>\The [user] places a bruise patch over \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You place a bruise patch over \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You place a bruise patch over \a [W.desc] on [M]'s [affecting.name].</span>" )
 				else
 					user.visible_message("<span class='notice'>\The [user] places a bandaid over \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You place a bandaid over \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You place a bandaid over \a [W.desc] on [M]'s [affecting.name].</span>" )
 				W.bandage()
 				used++
 			affecting.update_damages()
@@ -128,7 +128,7 @@
 			return 1
 		else
 			user.visible_message("<span class='notice'>\The [user] starts treating [M]'s [affecting.name].</span>", \
-					             "<span class='notice'>You start treating [M]'s [affecting.name].</span>" )
+									"<span class='notice'>You start treating [M]'s [affecting.name].</span>" )
 			var/used = 0
 			for (var/datum/wound/W in affecting.wounds)
 				if(W.bandaged)
@@ -141,14 +141,14 @@
 
 				if (W.current_stage <= W.max_bleeding_stage)
 					user.visible_message("<span class='notice'>\The [user] bandages, to their best of capability, \a [W.desc] on [M]'s [affecting.name]. It doesn't look like much, but it'll do.</span>", \
-					                              "<span class='notice'>You bandage \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You bandage \a [W.desc] on [M]'s [affecting.name].</span>" )
 					//H.add_side_effect("Itch")
 				else if (W.damage_type == BRUISE)
 					user.visible_message("<span class='notice'>\The [user] bandages, to their best of capability, \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You place a rugged bandage over \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You place a rugged bandage over \a [W.desc] on [M]'s [affecting.name].</span>" )
 				else
 					user.visible_message("<span class='notice'>\The [user] bandages, to their best of capability, \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You place a ragged bandage over \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You place a ragged bandage over \a [W.desc] on [M]'s [affecting.name].</span>" )
 				W.bandage()
 				used++
 			affecting.update_damages()
@@ -182,12 +182,12 @@
 			return 1
 		else
 			user.visible_message("<span class='notice'>\The [user] starts salving wounds on [M]'s [affecting.name].</span>", \
-					             "<span class='notice'>You start salving the wounds on [M]'s [affecting.name].</span>" )
+									"<span class='notice'>You start salving the wounds on [M]'s [affecting.name].</span>" )
 			if(!do_mob(user, M, 10))
 				to_chat(user, "<span class='notice'>You must stand still to salve wounds.</span>")
 				return 1
 			user.visible_message("<span class='notice'>[user] salved wounds on [M]'s [affecting.name].</span>", \
-			                         "<span class='notice'>You salved wounds on [M]'s [affecting.name].</span>" )
+									"<span class='notice'>You salved wounds on [M]'s [affecting.name].</span>" )
 			use(1)
 			affecting.salve()
 			affecting.disinfect()
@@ -213,7 +213,7 @@
 			return 1
 		else
 			user.visible_message("<span class='notice'>\The [user] starts treating [M]'s [affecting.name].</span>", \
-					             "<span class='notice'>You start treating [M]'s [affecting.name].</span>" )
+									"<span class='notice'>You start treating [M]'s [affecting.name].</span>" )
 			var/used = 0
 			for (var/datum/wound/W in affecting.wounds)
 				if (W.bandaged && W.disinfected)
@@ -225,13 +225,13 @@
 					break
 				if (W.current_stage <= W.max_bleeding_stage)
 					user.visible_message("<span class='notice'>\The [user] cleans \a [W.desc] on [M]'s [affecting.name] and seals the edges with bioglue.</span>", \
-					                     "<span class='notice'>You clean and seal \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You clean and seal \a [W.desc] on [M]'s [affecting.name].</span>" )
 				else if (W.damage_type == BRUISE)
 					user.visible_message("<span class='notice'>\The [user] places a medical patch over \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You place a medical patch over \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You place a medical patch over \a [W.desc] on [M]'s [affecting.name].</span>" )
 				else
 					user.visible_message("<span class='notice'>\The [user] smears some bioglue over \a [W.desc] on [M]'s [affecting.name].</span>", \
-					                              "<span class='notice'>You smear some bioglue over \a [W.desc] on [M]'s [affecting.name].</span>" )
+											"<span class='notice'>You smear some bioglue over \a [W.desc] on [M]'s [affecting.name].</span>" )
 				W.bandage()
 				W.disinfect()
 				W.heal_damage(heal_brute)
@@ -267,7 +267,7 @@
 			return 1
 		else
 			user.visible_message("<span class='notice'>\The [user] starts salving wounds on [M]'s [affecting.name].</span>", \
-					             "<span class='notice'>You start salving the wounds on [M]'s [affecting.name].</span>" )
+									"<span class='notice'>You start salving the wounds on [M]'s [affecting.name].</span>" )
 			if(!do_mob(user, M, 10))
 				to_chat(user, "<span class='notice'>You must stand still to salve wounds.</span>")
 				return 1
