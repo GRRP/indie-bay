@@ -108,6 +108,7 @@
 
 /obj/item/stack/medical/bruise_pack/makeshift_bandage
 	name = "makeshift bandages"
+	icon = 'makeshift.dmi'
 	singular_name = "makeshift bandage"
 	desc = "Some cloth to wrap around wounds"
 	icon_state = "makebandage"
