@@ -33,6 +33,7 @@
 	update_material()
 	hitsound = material.hitsound
 	processing_turfs |= src
+	rust()
 
 /turf/simulated/wall/Destroy()
 	processing_turfs -= src
@@ -214,6 +215,13 @@
 	var/number_rots = rand(2,3)
 	for(var/i=0, i<number_rots, i++)
 		new/obj/effect/overlay/wallrot(src)
+
+/turf/simulated/wall/proc/rust()
+	if(ticker)
+		return
+	if(prob(70))
+		return
+	new/obj/effect/overlay/rust(src)
 
 /turf/simulated/wall/proc/can_melt()
 	if(material.flags & MATERIAL_UNMELTABLE)
