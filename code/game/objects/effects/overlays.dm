@@ -56,3 +56,25 @@
 	..()
 	pixel_x += rand(-10, 10)
 	pixel_y += rand(-10, 10)
+
+/obj/effect/overlay/rust
+	name = "rust"
+	desc = "The scars of time on this ancient hull."
+	icon = 'icons/effects/rust.dmi'
+	anchored = 1
+	density = 1
+	plane = ABOVE_TURF_PLANE
+	layer = ABOVE_TILE_LAYER
+	mouse_opacity = 0
+
+/obj/effect/overlay/rust/New()
+	..()
+	if(prob(10))
+		icon_state = "light"
+		return
+	if(prob(90))
+		icon_state = "medium"
+		return
+	if(prob(90))
+		icon_state = "heavy"
+		return
