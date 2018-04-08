@@ -14,6 +14,10 @@
 	. = ..()
 	icon_state = "liver-prosthetic"
 
+/obj/item/organ/internal/liver/pod
+	icon_state = "liver-prosthetic"
+	robotic = ORGAN_ROBOT
+
 /obj/item/organ/internal/liver/Process()
 
 	..()

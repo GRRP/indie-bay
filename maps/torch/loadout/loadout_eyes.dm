@@ -1,8 +1,6 @@
 /datum/gear/eyes/eyepatch
-	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/eyes/fashionglasses
-	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/eyes/sciencegoggles
 	allowed_roles = RESEARCH_ROLES

@@ -46,6 +46,10 @@
 	. = ..()
 	icon_state = "brain-prosthetic"
 
+/obj/item/organ/internal/brain/pod
+	icon_state = "brain-prosthetic"
+	robotic = ORGAN_ROBOT
+
 /obj/item/organ/internal/brain/New(var/mob/living/carbon/holder)
 	..()
 	max_damage = 200

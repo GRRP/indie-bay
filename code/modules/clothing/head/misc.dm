@@ -288,11 +288,23 @@
 	flags_inv = BLOCKHEADHAIR //Shows beards!
 
 /obj/item/clothing/head/cowboy_hat
-	name = "cowboy hat"
-	desc = "A wide-brimmed hat, in the prevalent style of America's frontier period. By SolGov law, you are required to wear this hat while watching True Grit."
+	name = "small cowboy hat"
+	desc = "A short-brimmed cowboy hat. By frontier law, you are required to wear this hat while watching True Grit."
 	icon_state = "cowboyhat"
 	item_state = "cowboy_hat"
 	body_parts_covered = 0
+
+/obj/item/clothing/head/cowboy_hat/wide_brown
+	name = "brown cowboy hat"
+	desc = "A wide brown cowboy hat, made out of leather."
+	icon_state = "cowboy_brown"
+	item_state = "cowboy_brown"
+
+/obj/item/clothing/head/cowboy_hat/wide_black
+	name = "black cowboy hat"
+	desc = "A wide black cowboy hat, made out of leather."
+	icon_state = "cowboy_black"
+	item_state = "cowboy_black"
 
 /obj/item/clothing/head/taqiyah
 	name = "taqiyah"

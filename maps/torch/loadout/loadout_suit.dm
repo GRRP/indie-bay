@@ -1,59 +1,47 @@
 /datum/gear/suit/blueapron
-	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/suit/overalls
-	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/suit/medcoat
 	allowed_roles = MEDICAL_ROLES
 
 /datum/gear/suit/trenchcoat
-	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/suit/poncho
-	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/suit/security_poncho
-	allowed_roles = list( , /datum/job/merchant)
+	allowed_roles = SECURITY_ROLES
 
 /datum/gear/suit/medical_poncho
-	allowed_roles = list( /datum/job/psychiatrist, /datum/job/merchant)
+	allowed_roles = MEDICAL_ROLES
 
 /datum/gear/suit/engineering_poncho
-	allowed_roles = list( /datum/job/roboticist, /datum/job/merchant)
+	allowed_roles = ENGINEERING_ROLES
 
 /datum/gear/suit/science_poncho
-	allowed_roles = list(/datum/job/scientist, /datum/job/merchant)
+	allowed_roles = RESEARCH_ROLES
 
 /datum/gear/suit/cargo_poncho
-	allowed_roles = list( /datum/job/merchant)
+	allowed_roles = SUPPLY_ROLES
 
 /datum/gear/suit/suit_jacket
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/suit/custom_suit_jacket
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/suit/hoodie
-	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/suit/hoodie_sel
-	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/suit/labcoat
 	allowed_roles = STERILE_ROLES
 
 /datum/gear/suit/coat
-	allowed_roles = FORMAL_ROLES
 
 /datum/gear/suit/leather
-	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/suit/wintercoat
-	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/suit/track
-	allowed_roles = RESTRICTED_ROLES
 
 /datum/gear/tactical/pcarrier
 	allowed_roles = ARMORED_ROLES

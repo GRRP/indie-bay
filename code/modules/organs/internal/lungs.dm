@@ -47,6 +47,10 @@
 	. = ..()
 	icon_state = "lungs-prosthetic"
 
+/obj/item/organ/internal/lungs/pod
+	icon_state = "lungs-prosthetic"
+	robotic = ORGAN_ROBOT
+
 /obj/item/organ/internal/lungs/set_dna(var/datum/dna/new_dna)
 	..()
 	sync_breath_types()
@@ -335,7 +339,7 @@
 		breathtype += pick("shallow and rapid")
 	if(!breathtype.len)
 		breathtype += "healthy"
-	
+
 	. += "[english_list(breathtype)] breathing"
 
 	return english_list(.)

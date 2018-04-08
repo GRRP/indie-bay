@@ -1,5 +1,5 @@
 /datum/gear/suit/lab_xyn_machine
-	allowed_roles = NON_MILITARY_ROLES
+//	allowed_roles = NON_MILITARY_ROLES
 
 /datum/gear/mask/gas/vox
 	allowed_roles = list(/datum/job/merchant) //Since that is the only role vox can be beside stowaway.

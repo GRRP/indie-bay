@@ -16,6 +16,13 @@
 	robotic = ORGAN_ROBOT
 	organ_tag = BP_OPTICS
 
+/obj/item/organ/internal/eyes/pod
+	name = "optical sensor"
+	robotic = ORGAN_ROBOT
+	icon = 'icons/obj/robot_component.dmi'
+	icon_state = "camera"
+	dead_icon = "camera_broken"
+
 /obj/item/organ/internal/eyes/optics/New()
 	..()
 	robotize()

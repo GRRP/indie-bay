@@ -64,3 +64,6 @@
 
 /mob/living/carbon/human/stok/New(var/new_loc)
 	..(new_loc, "Stok")
+
+/mob/living/carbon/human/pod/New(var/new_loc)
+	..(new_loc, "Podmorph Human")

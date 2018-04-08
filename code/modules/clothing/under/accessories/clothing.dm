@@ -156,6 +156,18 @@
 	desc = "A jacket that NanoTrasen has its executives wear."
 	icon_state = "nt_jacket"
 
+/obj/item/clothing/accessory/chaps
+	name = "brown chaps"
+	desc = "A pair of loose, brown leather chaps."
+	icon_state = "chaps"
+	item_state = "chaps"
+
+/obj/item/clothing/accessory/chaps/black
+	name = "black chaps"
+	desc = "A pair of loose, black leather chaps."
+	icon_state = "chaps_black"
+	item_state = "chaps_black"
+
 /obj/item/clothing/accessory/toggleable/hawaii
 	name = "flower-pattern shirt"
 	desc = "You probably need some welder googles to look at this."

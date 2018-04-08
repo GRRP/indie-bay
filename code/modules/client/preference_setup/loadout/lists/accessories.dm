@@ -66,6 +66,17 @@
 	ntawards["command medal"] = /obj/item/clothing/accessory/medal/gold/nanotrasen
 	gear_tweaks += new/datum/gear_tweak/path(ntawards)
 
+/datum/gear/accessory/chaps
+	display_name = "leather chaps"
+	path = /obj/item/clothing/accessory/chaps
+
+/datum/gear/accessory/chaps/New()
+	..()
+	var/chaps = list()
+	chaps["brown chaps"] = /obj/item/clothing/accessory/chaps
+	chaps["black chaps"] = /obj/item/clothing/accessory/chaps/black
+	gear_tweaks += new/datum/gear_tweak/path(chaps)
+
 //have to break up armbands to restrict access
 /datum/gear/accessory/armband_security
 	display_name = "security armband"

@@ -92,17 +92,28 @@
 	formalhats["fedora, grey"] = /obj/item/clothing/head/det/grey
 	gear_tweaks += new/datum/gear_tweak/path(formalhats)
 
-/datum/gear/head/informalhat
-	display_name = "informal hat selection"
+/datum/gear/head/ushankas
+	display_name = "ushanka selection"
 	path = /obj/item/clothing/head
 
-/datum/gear/head/informalhat/New()
+/datum/gear/head/ushankas/New()
 	..()
-	var/informalhats = list()
-	informalhats["cowboy hat"] = /obj/item/clothing/head/cowboy_hat
-	informalhats["ushanka"] = /obj/item/clothing/head/ushanka
-	informalhats["TCC ushanka"] = /obj/item/clothing/head/ushanka/tcc
-	gear_tweaks += new/datum/gear_tweak/path(informalhats)
+	var/ushankas = list()
+	ushankas["ushanka"] = /obj/item/clothing/head/ushanka
+	ushankas["TCC ushanka"] = /obj/item/clothing/head/ushanka/tcc
+	gear_tweaks += new/datum/gear_tweak/path(ushankas)
+
+/datum/gear/head/cowboys
+	display_name = "cowboy hat selection"
+	path = /obj/item/clothing/head/cowboy_hat
+
+/datum/gear/head/cowboys/New()
+	..()
+	var/cowboys = list()
+	cowboys["small cowboy hat"] = /obj/item/clothing/head/cowboy_hat
+	cowboys["brown cowboy hat"] = /obj/item/clothing/head/cowboy_hat/wide_brown
+	cowboys["black cowboy hat"] = /obj/item/clothing/head/cowboy_hat/wide_black
+	gear_tweaks += new/datum/gear_tweak/path(cowboys)
 
 /datum/gear/head/hijab
 	display_name = "hijab, colour select"
